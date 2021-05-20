@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>💣 Minesweeper 💣</title>
+  </head>
+  <body onload="initGame()">
+    <div class="modal-high-score hidden">
+      <button class="close-modal">&times;</button>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <h1>Minesweeper</h1>
+    <div class="row info-container">
+      <div class="mines-left">30</div>
+      <div class="status">😁</div>
+      <div class="timer">000</div>
+    </div>
+    <table class="row table-class">
+      <tbody class="game-board"></tbody>
+    </table>
+    <div class="row lives-bar"></div>
+    <div class="row hints"></div>
+    <div class="row level-btns">
+      <button onclick="changeLevel('easy')">EASY</button>
+      <button onclick="changeLevel('medium')">MEDIUM</button>
+      <button onclick="changeLevel('hard')">HARD</button>
+    </div>
+    <button class="show-modal">HIGH SCORE</button>
+    <script src="js/utils.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+  <footer>Ido Gross</footer>
+</html>
